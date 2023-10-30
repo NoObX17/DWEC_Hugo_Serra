@@ -18,20 +18,21 @@ mesfin = fincurso.getMonth();
 //Inicializamos el contador de dias en 0
 contdias = 0;
 
-//BUCLE FOR PARA CONTAR LOS DIAS DE TODOS LOS MESES RESTANTES HASTA DICIEMBRE
-for (let i = mes; i<12 ; i++){
+//BUCLE FOR PARA CONTAR LOS DIAS DE TODOS LOS MESES RESTANTES HASTA EL MES FINAL
+for (let i = mes; i<(12+(mesfin+1)) ; i++){
     var data = new Date(2023,(i+1),0);
     diasmes = data.getDate();
     contdias = contdias + diasmes;
     console.log(contdias);
 }
+
 //BUCLE FOR PARA CONTAR LOS DIAS DESDE ENERO HASTA EL MES DE LA FECHA FINAL
-for (let i = 0; i<(mesfin+1) ; i++){
+/*for (let i = 0; i<(mesfin+1) ; i++){
     var data = new Date(2023,(i+1),0);
     diasmes = data.getDate();
     contdias = contdias + diasmes;
     console.log(contdias);
-}
+}*/
 
 
 const ultimomes = new Date(2023,(mesfin+1),0);
