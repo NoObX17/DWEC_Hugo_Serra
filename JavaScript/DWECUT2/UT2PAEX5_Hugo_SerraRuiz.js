@@ -42,7 +42,7 @@ let alumno1 = new Alumne("43222816C", "Hugo Serra", 7);
 let alumno2 = new Alumne("45817902D", "David Tous", 6);
 
 colegio.afegirAlumne(alumno1);
-console.log(alumno1);
+document.write("Datos del alumno 1 previamente al metodo modificarMitjanaAlumne: "+JSON.stringify(alumno1)+"<br>");
 colegio.modificarMitjanaAlumne("43222816C", 9);
-console.log(alumno1);
+document.write("Datos del alumno 1 una vez usado el metodo modificarMitjanaAlumne: "+JSON.stringify(alumno1)+"<br>");
 
