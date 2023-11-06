@@ -36,7 +36,7 @@ class Pacient {
 }
 
 //Instancia de las clases y prueba de los metodos creados.
-let hospital = new Hospital("Hospital General", "Palma", 700);
+let hospital = new Hospital("Hospital General", "Palma", 3);
 let paciente1 = new Pacient("43222816C", "Hugo", "Resfriado fuerte");
 let paciente2 = new Pacient("44321234J", "David", "Lesion muscular");
 let paciente3 = new Pacient("49875291B", "Marc", "Covid");
@@ -45,7 +45,6 @@ hospital.afegirPacients(paciente1);
 hospital.afegirPacients(paciente2);
 hospital.afegirPacients(paciente3);
 
-console.log(hospital.numPacients);
-console.log(hospital.pacients[0]);
+document.write("Numero de pacienes del hospital: "+hospital.numPacients+"<br>");
 hospital.altaPacient("43222816C");
-console.log(hospital.numPacients);
+document.write("Numero de pacientes del hospital despues del alta del paciente: "+hospital.numPacients);
