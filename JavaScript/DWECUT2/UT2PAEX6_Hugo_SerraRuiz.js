@@ -65,10 +65,17 @@ let vuelo2 = new Vol("UX5543", "11:30", "13:30");
 
 aeropuerto.afegirVols(vuelo1);
 aeropuerto.afegirVols(vuelo2);
-console.log(vuelo1);
-console.log(vuelo2);
+document.write("<h4>Vuelos antes de ser modificados</h4>")
+document.write("Vuelo: "+vuelo1.codi+ " con hora de salida: "+vuelo1.hora_sortida+ " y hora de llegada: "+vuelo1.hora_arribada+"<br>");
+document.write("Vuelo: "+vuelo2.codi+ " con hora de salida: "+vuelo2.hora_sortida+ " y hora de llegada: "+vuelo2.hora_arribada+"<br>");
+
 aeropuerto.modificarArribada("UX9671", "9:55");
 aeropuerto.modificarSortida("UX5543", "11:55");
-console.log(aeropuerto.comprobarSortida(vuelo1));
-console.log(vuelo1);
-console.log(vuelo2);
+
+document.write("<h4>Vuelos despues de las modificaciones</h4>")
+document.write("Vuelo: "+vuelo1.codi+ " con hora de salida: "+vuelo1.hora_sortida+ " y hora de llegada: "+vuelo1.hora_arribada+"<br>");
+document.write("Vuelo: "+vuelo2.codi+ " con hora de salida: "+vuelo2.hora_sortida+ " y hora de llegada: "+vuelo2.hora_arribada+"<br>");
+
+document.write("<h4>Uso del metodo comprobarSortida</h4>")
+document.write("El vuelo cumple con la condicion de que la hora de salida es anterior a la hora de llegada? "
++aeropuerto.comprobarSortida(vuelo1)+"<br>");
