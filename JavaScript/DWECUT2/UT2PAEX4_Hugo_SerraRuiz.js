@@ -34,3 +34,4 @@ console.assert(agendarReunio("17:30",30)==false, 'Error comprovant agendarReunio
 console.assert(agendarReunio("18:00",15)==false, 'Error comprovant agendarReunio("18:00",15)==false');
 console.assert(agendarReunio("15:30",180)==false, 'Error comprovant agendarReunio("15:30",180)==false');
 console.log("Test Done!");
+document.write("Test realizado correctamente");
